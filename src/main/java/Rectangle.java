@@ -6,8 +6,9 @@ public class Rectangle {
 
     public Rectangle(double width, double height) {
         this.width = checkInputParameter(width, "width");
-        this.height = height;
+        this.height = checkInputParameter(height, "height");
     }
+
 
     /**
      * Berechnet die Fläche des Rechtecks
@@ -16,7 +17,7 @@ public class Rectangle {
      */
     public double calculateArea() {
         // please implement method
-        return 0;
+        return this.width * this.height;
     }
 
     /**
@@ -24,8 +25,9 @@ public class Rectangle {
      * @return den Umfang
      */
     public double calculateScope() {
+
         // please implement method
-        return 0;
+        return 2 * this.width + 2 * this.height;
     }
 
     /**
